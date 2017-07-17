@@ -1,0 +1,26 @@
+@media (max-width: 1366px){}
+@media (max-width: 1280px){}
+@media (max-width:1200px){}
+@media (max-width:1024px){
+	.container { width: 100%;}
+	.car-type {padding: 20px 15px 20px 0;}
+	.bottom-part { line-height:normal; padding-top: 15px;padding-bottom: 8px;}
+}
+@media (max-width:992px){
+.search-section .box2 { padding:0px 50px 20px 20px; margin-bottom:10px; }
+}
+@media (max-width:980px){}
+@media (max-width:768px){}
+@media (max-width:767px){
+	.search-section .box2 .search-icon { text-align:right;}
+	.search-section .box2 .search-icon img { max-width:60%; height:auto; display: inline-block;}
+}
+@media (max-width:685px){}
+@media (max-width:640px){}
+@media (max-width:600px){} 
+@media (max-width:568px){}
+@media (max-width:480px){}
+@media (max-width:479px){}
+@media (max-width:380px){}
+@media (max-width:360px){}
+@media (max-width:320px){}

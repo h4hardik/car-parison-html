@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300italic,300,400italic,500,500italic,700,700italic);
+
+*{ -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; margin:0px; padding:0px;}
+body { font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size:14px; line-height:20px;  }
+html {-webkit-font-smoothing: antialiased !important;}
+
+
+/*========== GENERAL DECLARATION  ===========*/
+a { background: transparent; color:#008752; cursor:pointer;   outline: none;}
+a:focus { outline:none; text-decoration:none;}
+a:hover { text-decoration:none; cursor:pointer;}
+ul, ol, li{ padding:0px; margin:0px; list-style:none;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+
+a:hover, button:hover { transition: color 300ms, background-color 300ms, border-color 300ms, background 300ms, text-decoration 300ms, background-image 300ms, opacity 300ms;
+          -moz-transition: color 300ms, background-color 300ms, border-color 300ms, background 300ms, text-decoration 300ms, background-image 300ms, opacity 300ms; 
+		  -o-transition: color 300ms, background-color 300ms, border-color 300ms, background 300ms, text-decoration 300ms, background-image 300ms, opacity 300ms; 
+		  -webkit-transition: color 300ms, background-color 300ms, border-color 300ms, background 300ms, text-decoration 300ms, background-image 300ms, opacity 300ms;
+		  }
+		  
+a, button { transition: color 300ms, background-color 300ms, border-color 300ms, background 300ms, text-decoration 300ms, background-image 300ms, opacity 300ms;
+          -moz-transition: color 300ms, background-color 300ms, border-color 300ms, background 300ms, text-decoration 300ms, background-image 300ms, opacity 300ms; 
+		  -o-transition: color 300ms, background-color 300ms, border-color 300ms, background 300ms, text-decoration 300ms, background-image 300ms, opacity 300ms; 
+		  -webkit-transition: color 300ms, background-color 300ms, border-color 300ms, background 300ms, text-decoration 300ms, background-image 300ms, opacity 300ms;
+		  }
+::selection{ background:#666; color: #fff; text-shadow:none;}
+
+.hide1{  opacity:0;}
+.show1{  opacity:1;}
+ul,p,h1,h2,h3,h4,h5,h6{ padding: 0; margin: 0; list-style: none; }
+h3 { font-size: 24px; font-weight: 500; color: #000000; }
+h4 { font-size: 16px; line-height: 22px; font-weight: 500; text-transform: none; }
+p{ font-size: 14px; line-height: 22px; color: #000; font-weight: 400; text-transform: none; }
+input, select { color: #b3b3b3; font-size: 14px; line-height: 18px; border: 1px solid #b3b3b3; font-weight: 300; padding: 9px; }
+.custom-select { height:38px;  background: #fff;  width: 100%;}
+
+/*===================================*/
+/*========== COMMON CSS  ===========*/
+/*===================================*/
+#wrapper {}
+/*#wrapper{ background-image: url(../images/adv-bg.png); background-position: top center; background-repeat: no-repeat; background-size: contain; }*/
+
+.btn { min-width: 105px; position: absolute; bottom: 0; right: 0; color: #f6dc31; font-size: 16px; line-height: 20px; padding: 10px 25px; border:0; border-radius: 0; text-transform: uppercase; font-weight: 500;  }
+.btn:hover { background: #f3353d; color: #fff;  }
+.btn-black { background: #000; }
+.btn-yellow { background: #f6dc31; color: #000; }
+.btn-red { background: #f3353d; }
+.bottom-space { margin-bottom: 40px;  }
+.box { position: relative; overflow: hidden; text-transform: uppercase; font-weight: 700; padding: 10px; }
+.box2 { position: relative; text-transform: uppercase; font-weight: 700; padding: 10px; }
+.bg-yellow { background: #f6dc31; }
+.bg-black { background: #333333; }
+.bg-light-yellow { background: #ffeb68; }
+.bg-red { background: #f3353d; }
+.red-bg {background: #f3353d; }
+.bg-grey { background: #f8f8f8; }
+
+
+/*===================================*/
+/*========== CONTENT SECTION CSS  ===========*/
+/*===================================*/
+.main-content { padding:45px 0px;}
+
+/*--- car counter box css---*/
+.car-counter-block { padding: 0px;  }
+.car-counter-box { float: right; padding: 15px 50px; border-radius: 50px;}
+.car-counter-box p { font-size: 16px; line-height: 20px; color: #ffffff; font-weight: 500;  }
+.car-for-sale { color: #fff; font-size: 14px; line-height: 18px; font-weight: 300;  }
+.car-for-sale span { font-weight: 500; font-size:36px; line-height: 40px; color: #ffeb68; float: left; padding-right: 20px; }
+
+/*--- home search box top css---*/
+.home-search-section {}
+.search-section { padding-top: 40px; }
+.search-section .box2 { position: relative;  text-transform: uppercase; font-weight: 700; padding: 10px; margin-top:55px;}
+.search-section .box2 .icon { font-size: 148px; position: absolute; bottom: -17px; right: -17px; color: #fff; }
+.search-section .box2 { font-size: 34px; line-height: 50px; padding: 0px 50px 120px 20px; color: #000; }
+.search-box-text {    position: relative; margin-top: -20px; display: inline-block; position: relative; z-index: 9;}
+.search-section .box2 .search-icon { font-size: 148px; position: absolute;   bottom: 0px; right: 0px; color: #fff; z-index: 0;}
+.search-section #base { background: #f6dc31; display: inline-block; height: auto; position: relative; width: auto;}
+.search-section #base:before {  border-bottom: 55px solid #f6dc31; border-left: 0px solid transparent;  border-right: 60px solid transparent;  content: "";  height: 0;  right: 0;  position: absolute; top: -55px;  width: 100%;}
+
+.search-form-section { min-height: 256px; background: #fff; padding: 20px;     border: 1px solid #f0f0f0;}
+
+/*--- search tab section css ---*/
+.search-form-section .resp-tabs-list li {font-weight: 500;  font-size: 18px; display: inline-block;  padding: 5px 10px; text-transform:uppercase; margin: 0 0px 0 0; list-style: none; cursor: pointer; float: left; background-color: transparent !important; }
+.search-form-section .resp-tabs-container { padding: 0px; background-color: #fff;clear: left;}
+.search-form-section h2.resp-accordion { cursor: pointer; padding: 5px; }
+
+.search-form-section .resp-tab-content {display: none; padding: 0px;}
+.search-form-section .resp-tab-active { border: 0px solid #5AB1D0 !important; border-bottom: none; margin-bottom: -3px !important; padding: 5px 10px !important; border-top: 0px solid #5AB1D0 !important; border-bottom: 3px #f3353d solid !important; color:#f3353d;}
+.search-form-section .resp-tab-active { border-bottom: none; background-color: #fff;}
+.search-form-section .resp-content-active, .search-form-section .resp-accordion-active {display: block;}
+.search-form-section .resp-tab-content {  border: 0px solid #c1c1c1; border-top:3px solid #b3b3b3;}
+.filter-block { height: 256px; background: #fff; padding: 15px 20px; }
+.tab-list { border-bottom: 3px solid #b3b3b3; }
+.tab-list li { float: left; }
+.tab-list li a { display: block; text-transform: uppercase; font-size: 18px; line-height: 22px; color: #b3b3b3; font-weight: 500; padding: 8px 15px; margin-bottom: -3px; border-bottom: 3px solid; }
+.tab-list li.current a,.tab-list li a:hover { color: #f3353d; }
+.tab-content { padding: 5px 0 0 0; }
+.tab-block {}
+.tab-block > p { text-align: right; font-size: 13px; line-height: 20px; color: #000000; font-weight: 300; }
+.tab-block > p a { color: #f3353d; text-decoration: underline; }
+.search-form { padding: 13px 0 0 0; }
+.search-form .form-row { padding-bottom: 10px; margin: 0 -4px; }
+.search-form .form-row:last-of-type { padding-bottom: 0; }
+.search-form .form-row .form-col { float: left; width: 25%; padding: 0 4px; }
+.search-form .form-row .form-col input, .form-row .form-col select { width: 100%; }
+.search-form .form-row .form-col.width-75 { width: 75%; }
+.filter-links { padding-left: 4px; }
+.filter-links li { float: left; padding-right: 10px; }
+.filter-links li a { display: block; font-size: 16px; line-height: 20px; padding: 8px 10px; color: #000000;  text-transform: uppercase; }
+.filter-links li a.active, .filter-links li a:hover { background: #333333; color: #f6dc31; }
+.sbt-btn { background: #f6dc31; color: #000; text-transform: uppercase; padding: 10px 30px; font-size: 16px; line-height: 20px; float: left; font-weight: 500; border: 0; transition: all 200ms ease-in-out 0s; -moz-transition: all 200ms ease-in-out 0s; -webkit-transition: all 200ms ease-in-out 0s; }
+.sbt-btn:hover { background: #f3353d; color: #fff; }
+.control-box { padding-right: 4px; }
+.or-text { float: left; color: #b3b3b3; font-size: 13px; line-height: 31px; text-align: center; text-transform: uppercase; font-weight: 300; width: 31px; height: 31px; border: 1px solid #b3b3b3;  border-radius: 100%; margin: 5px 20px 0; }
+.control-box > a { color: #f3353d; font-size: 16px; text-transform: uppercase; font-weight: 500; display: inline-block; margin-top: 10px; }
+.control-box > a:hover { color: #000; }
+
+
+/*--- new car showroom section css ---*/
+.new-car-section{ background: #fff; border: 1px solid #333333;  box-shadow: 5px 5px 10px rgba(0,0,0,0.2); margin-top:40px;}
+.left-part { background: #333333;     position: relative; color: #fff; text-transform: uppercase; font-size: 18px; line-height: 28px; min-height: 146px; font-weight: 700; padding: 45px 20px 20px 20px;}
+.left-part:before { border-left: 100px solid transparent; border-top: 146px solid #fff; border-right: 0; content: ""; position: absolute; right: 0;  width: 0; height: 0; top:0px;} 
+.middle-part {   padding: 0 20px 0 20px; vertical-align: top;}
+.car-type {  padding: 20px 20px 20px 0; float: left; min-height: 146px; border-right: 1px solid #bfbfbf; }
+.car-type ul { }
+.car-type ul li { float: left; min-width: 135px; padding: 7px 0; min-height: 35px; }
+.car-type ul li a { color: #c5c5c5; font-size: 16px; display: block; }
+.car-type ul li a:hover { color: #f3353d; }
+.car-type ul li a .icon { display: inline-block; vertical-align: middle; }
+.car-company { }
+.car-company > a { color: #f3353d; font-size: 12px; margin-left: 20px; }
+.car-company > a:hover { color: #000; }
+.car-company ul { padding: 20px 0 0px 20px; }
+.car-company ul li { float: left; width: 33.33%; padding: 0px 0; line-height: 34px;}
+.car-company ul li a { display: inline-block; color: #b3b3b3; font-size: 16px; }
+.car-company ul li a:hover { color: #f3353d; }
+.right-part { height: 146px;  background: #ffeb68;}
+.top-part { padding: 20px 0px 20px 0px; text-align:center; }
+.top-part a { padding: 8px 5px;  color: #fff;  text-transform: uppercase; font-weight: 500;  font-size: 14px;   background: #000;  display: inline-block; }
+.top-part a.create-btn { background: #505050; }
+.top-part a:hover, .top-part a.create-btn:hover { background: #f3353d; }
+.bottom-part { background: #f6dc31; text-align: center; font-size: 12px; line-height: 30px; font-weight: 400; padding-top: 10px; }
+.bottom-part span { font-size: 16px; font-weight: 700; display: block; text-transform: uppercase; }
+
+
+/*--- sponsor section css ---*/
+.sponsor-block{ margin-top:40px;  }
+.sponsor-block .box2 { min-height: 112px; padding: 26px 20px 20px; color: #f6dc31; line-height: 32px; font-size: 18px;  margin-top: 35px;}
+.sponsor-block #base {background: #333333;display: block;height: auto; position: relative;  width: auto;}
+.sponsor-block #base:before {border-bottom: 35px solid #333333; border-left: 0px solid transparent; border-right: 60px solid transparent; content: ""; height: 0;right: 0;position: absolute; top: -35px; width: 100%;}
+.sponsor-list { background: #f8f8f8; padding: 19px 20px; min-height: 147px; }
+.sponsor-list ul {  }
+.sponsor-list ul li { float: left; text-align: center; width: 20%; }
+.sponsor-img img { display: block; margin: 0 auto; }
+.sponsor-list ul li p { padding: 15px 0 10px; font-size: 13px; font-weight: 300; color: #000; line-height: normal; }
+
+/*--- loan section css ---*/
+.car-insurance-block { margin-top:40px;}
+.car-insurance-block .box2 { min-height: 231px; padding: 20px;  margin-top: 55px; }
+.car-insurance-block #base {background: #f6dc31;display: block;height: auto; position: relative;  width: auto;}
+.car-insurance-block #base:before {border-bottom: 55px solid #f6dc31; border-left: 0px solid transparent; border-right: 60px solid transparent; content: ""; height: 0;right: 0;position: absolute; top: -55px; width: 100%;}
+
+.car-insurance-block .bg-light-yellow#base {background: #ffeb68;display: block;height: auto; position: relative;  width: auto;}
+.car-insurance-block .bg-light-yellow#base:before {border-bottom: 55px solid #ffeb68; border-left: 0px solid transparent; border-right: 60px solid transparent; content: ""; height: 0;right: 0;position: absolute; top: -55px; width: 100%;}
+.car-insurance-block  .block-title {margin-top: -55px; position:relative; z-index:10; }
+.block-title { padding: 0 10px 0 60px; margin: 10px 0; background-repeat: no-repeat; background-position: left 5px; }
+.block-title h3 { max-width: 180px; line-height: 32px; text-transform:uppercase;  font-family: 'Fira Sans', sans-serif; }
+.icon-insurence { background-image: url(../images/icon-car-insurance.png);  font-family: 'Fira Sans', sans-serif; }
+.icon-loan { background-image: url(../images/icon-car-loan.png); padding: 0 10px 0 70px;  }
+.car-insurance-block .bg-yellow p { padding: 10px 0; }
+.adv-block {}
+.adv-block img { display: block; }
+
+
+/*--- car reviwe - news section css ---*/
+.car-review-wrapper {  padding: 40px 0; background: url(../images/grey-pattern.jpg) repeat; margin-top:40px;  }
+.slider-btn { position: absolute; bottom: 0; right: 0; }
+.slider-btn a { width: 39px; height: 35px; display: block; float: left; background: #f6dc31; color: #333333; font-size: 19px; text-align: center; }
+.slider-btn a span { height: 100%; display: block; width: 100%; line-height: 35px; }
+.slider-btn a:first-child { border-right: 1px solid #333; }
+.slider-btn a:hover { background: #f3353d; color: #fff; }
+.slider-wrapper {  }
+.slider {}
+.slider li {}
+.slider li .slider-image { position: relative; }
+.slider li .slider-image img { display: block; width: 100%; }
+.slider li .slider-image .btn { left: 0; right: auto;  }
+.slider-desc { padding: 16px 0; }
+.slider-desc .slide-title { font-size: 30px; line-height: 34px; text-transform: uppercase; color: #000; font-weight: 700; }
+.slider-desc p { padding: 16px 0; }
+.slider-desc a { display: inline-block; font-size: 16px; line-height: 20px; color: #f3353d; font-weight: 500; text-transform: uppercase; }
+.slider-desc a:hover { color: #000; }
+
+
+/*--- home-bottom section ---*/
+.home-bottom-wrapper { margin-top:40px;  }
+/*--- car of the week section css ---*/
+.car-of-week-info { border:1px solid #b3b3b3;     padding: 29px 0px 28px; position: relative; }
+.car-of-week .box2{     height: 190px;color: #fff;font-size: 30px;line-height: 40px;padding: 25px 50px 50px 20px;     margin-top: 55px;}
+.car-of-week  #base {background: #f3353d;display: block; position: relative;  width: auto;}
+.car-of-week  #base:before {border-bottom: 55px solid #f3353d; border-left: 0px solid transparent; border-right: 60px solid transparent; content: ""; height: 0;right: 0;position: absolute; top: -55px; width: 100%;}
+.bottom-block .box2 h3 { line-height: 36px; }
+.bottom-block .box2 h4 { padding: 14px 0 0 0; }
+.bottom-block .box2 p { padding: 20px 0; }
+.car-image { float: left; }
+.title-wrapper { text-transform: uppercase; margin: 25px 0 0 0px; }
+.title-wrapper .title { font-weight: 700; color: #000000; font-size: 30px; line-height: 36px; padding-bottom: 10px; }
+.title-wrapper p { text-transform: uppercase; color: #000000; font-weight: 300; font-size: 26px; line-height: 36px; }
+.title-wrapper p span { color: #f3353d; }
+
+/*--- home-bottom services section ---*/
+.bottom-block { margin-top:40px;}
+.bottom-block .box2 { padding: 25px 30px 50px 20px;  margin-top: 55px;}
+.bottom-block #base {background: #f8f8f8;display: block; position: relative;  width: auto;}
+.bottom-block #base:before {border-bottom: 55px solid #f8f8f8; border-left: 0px solid transparent; border-right: 60px solid transparent; content: ""; height: 0;right: 0;position: absolute; top: -55px; width: 100%}
+.bottom-block .box2  h3 {margin-top: -55px; position: relative;}
+
+
+/*-------------------------End Content-------------------------------*/
+
+/*-------------------------Footer-------------------------------*/
+footer { border-top:4px solid #f3353d; color: #fff; font-size: 14px; font-weight: 300;  }
+.ft-top { background: #333333; padding: 45px 0; }
+.ft-block h4 { font-weight: 700; color: #fff; text-transform: uppercase; padding-bottom: 10px; }
+.ft-links {}
+.ft-links li { padding: 6px 0; }
+.ft-links li:last-child { padding-bottom: 0; }
+.ft-links li a { font-size: 16px; display: inline-block; }
+.ft-links li a .icon { margin-right: 10px; display: inline-block; vertical-align: middle; }
+.ft-bottom { background: #000000; padding: 20px 0;  }
+.ft-menu {  }
+.ft-menu li { float: left; padding-right: 15px; }
+.ft-menu li:last-child { padding-right: 0; }
+.ft-menu li a { text-transform: uppercase; display: block; }
+footer a { color: #fff; }
+footer a:hover { color: #f3353d; }
+
+/*-------------------------End Footer-------------------------------*/
+
+
+
+
+
+
+ 
+.car-review-wrapper .box2{ height: 195px; display: table-cell; vertical-align: middle; color: #f6dc31; font-weight: 700; font-size: 30px; line-height: 40px; padding: 20px 20px 50px 20px;     margin-top: 55px;}
+.car-review-wrapper #base {background: #333333;display: block; position: relative;  width: auto;}
+.car-review-wrapper #base:before {border-bottom: 55px solid #333333; border-left: 0px solid transparent; border-right: 60px solid transparent; content: ""; height: 0;right: 0;position: absolute; top: -55px; width: 100%;}
+
+
+/*-------------------------Header-------------------------------*/
+header { background: #000; }
+.ht-left{ float: left;  }
+.logo{ padding: 13px 0 13px 30px; }
+.logo a{ display: inline-block;  }
+.logo a img { display: block; }
+.ht-right { float: right; position: relative;  }
+.menu { float: left; }
+.menu li { float: left; }
+.menu li a { color: #fff; text-transform: uppercase; font-size: 15px; font-weight: 500; padding: 43px 10px; display: block; }
+.menu li.current-menu a, .menu li a:hover{ background: #f3353d;  }
+.contact-block { height: 100%; background: #333333; float: right; color: #fff; padding: 13px 20px 17px 50px; min-width: 260px;  }
+.contact-block > a { color: #fff; font-size: 15px; line-height: 20px; font-weight: 500; text-transform: uppercase; }
+.contact-block > a:hover { color: #f3353d;  }
+.contact-block > a .icon { padding-right: 10px;  }
+
+.btn-wrapper { position: relative; padding: 15px 0 3px 0; }
+.btn-wrapper a { padding: 8px 10px; width: 50%; background: #ffeb68; text-align: center; float: left; font-size: 14px; line-height: 20px; font-weight: 500; display: block; color: #000; text-transform: uppercase; }
+.btn-wrapper a:first-child { border-radius: 15px 0 0 15px; border-right: 1px solid #98b664;  }
+.btn-wrapper a:last-child { background: #f6dc31; border-radius: 0 15px 15px 0; }
+/*-------------------------End Header-------------------------------*/
+
+
+
+/*===================================*/
+/*========== SPECIAL OFFER PAGE CSS  ===========*/
+/*===================================*/
+.inner-page .main-content {padding: 0px 0px;}
+.inner-page-top-section  {  padding: 40px 0; background: url(../images/grey-pattern.jpg) repeat;  }
+.inner-page-header { position: relative;  margin-top:55px;}
+.inner-head-content {padding: 0px 50px 55px 20px; }
+.inner-head-content .main-text{ text-transform: uppercase; font-weight: 700;}
+.inner-page-header .inner-head-content .main-text { font-size: 34px; line-height: 40px; color: #000; }
+.inner-page-header .inner-head-content .sub-text { font-size: 26px; line-height:32px; color: #000; font-weight:300; }
+.inner-page-header#base { background: #f6dc31; display: inline-block; height: auto; position: relative; width: auto;}
+.inner-page-header#base:before {  border-bottom: 55px solid #f6dc31; border-left: 0px solid transparent;  border-right: 60px solid transparent;  content: "";  height: 0;  right: 0;  position: absolute; top: -55px;  width: 100%;}
+
+
+.newsletter-box { display:inline-block; vertical-align:top; margin-top:50px; width:75%;}
+.newsletter-title { font-size:16px; font-weight:300; color:#000; text-transform:uppercase; text-align:left;}
+.newsletter-form { padding-top:20px;}
+.newsletter-form input { width:100%;}
+.newsletter-form input.sbt-btn {padding: 10px 15px;}
+
+
+.special-offer-section { padding-bottom:40px;}
+.offer-box-section-row { padding:15px 0px;}
+.offer-box { border:1px solid #b3b3b3; padding:10px;}
+.offer-title { font-size:16px; font-weight:600; text-transform:uppercase; padding-top:5px;}
+.offer-title a { color:#000;}
+.offer-text { font-size:14px; line-height:18px; color:#000; font-weight:300; padding:5px 10px; background:#f8f8f8; margin-top:5px; position:relative;}
+.condition-text { font-size:12px; font-weight:300; padding-top:5px;}
+.condition-text a { color:#888888; }
+.info-icon { position:absolute; right:0px; top: -15px;}
+.info-icon .tooltip-inner { max-width: 220px; padding: 5px 8px; color: #fff; text-align: left; text-decoration: none; background-color: #000; border-radius: 4px; min-width: 140px;}
+
+.page-note { }
+.page-note p { padding:0px; margin:0px; color:#888; font-size:12px; line-height:18px; font-weight:300;}
+
+.special-top-filter-section { padding:20px 0; border-bottom:2px solid #f8f8f8;}
+.total-offer-counter { font-size:30px; line-height:60px; font-weight:300; color:#000;}
+.offer-filter-title { font-size:16px; color:#000; font-weight:500; text-transform:uppercase;}
+.offer-filter-form { padding-top:5px;}
+
+/* custom pagination */
+.custom-pagination {}
+.custom-pagination nav { display:inline-block;}
+.custom-pagination .pagination {   display: inline-block; padding-left: 0; margin: 10px 0 0; border-radius: 4px;}
+.custom-pagination .pagination > li { display: inline-block; margin:0px 3px;}
+.custom-pagination .pagination > li:last-child { margin-right:0px;}
+.custom-pagination .pagination > li:first-child { margin-left:0px;}
+.custom-pagination .pagination > li > a, 
+.custom-pagination .pagination > li > span {
+    position: relative; float: left;font-size:16px; font-weight:500; padding: 6px 12px;  margin-left: 0px; line-height: 1.42857143;  color: #b3b3b3;text-decoration: none;background-color: #fff; border: 1px solid #d3d3d3;
+}
+
+.custom-pagination .pagination>.active>a, 
+.custom-pagination .pagination>.active>a:focus, 
+.custom-pagination .pagination>.active>a:hover, 
+.custom-pagination .pagination>.active>span, 
+.custom-pagination .pagination>.active>span:focus, 
+.custom-pagination .pagination>.active>span:hover { z-index: 3; color: #000; cursor: default; background-color: #f6dc31; border-color: #d8b52b;}
+
+.custom-pagination .pagination > li > a:hover, 
+.custom-pagination .pagination > li > span:hover, 
+.custom-pagination .pagination > li > a:focus, 
+.custom-pagination .pagination > li > span:focus { color: #000; background-color: #f9f9f9; border-color: #ccc;}
+.custom-pagination .pagination > li > a.prev, 
+.custom-pagination .pagination > li > span.prev {color: #fff; text-transform:uppercase; text-decoration: none; background-color: #b3b3b3; border: 1px solid #d3d3d3;}
+.custom-pagination .pagination > li:first-child > a,
+.custom-pagination .pagination > li:first-child > span { margin-left: 0; border-top-left-radius: 0px;border-bottom-left-radius: 0px;}
+
+.custom-pagination .pagination > li:last-child > a, 
+.custom-pagination .pagination > li:last-child > span { border-top-right-radius: 0px; border-bottom-right-radius: 0px;}
+
+
+.special-bottom-filter-section { padding:20px 0; border-top:2px solid #f8f8f8;}
+.special-bottom-filter-section .custom-pagination .pagination  { margin:0px;}
